@@ -1,7 +1,7 @@
 let currentYear = new Date().getFullYear();
 
 function updateCountdown() {
-  const birthdayDate = new Date(`June 2 ${currentYear} 00:00:00`);
+  const birthdayDate = new Date(`June 19 ${currentYear} 00:00:00`);
   const currentTime = new Date().getTime();
 
   const timeLeft = birthdayDate - currentTime;
