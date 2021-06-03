@@ -30,3 +30,21 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+const colors = [
+  '#EEEEFF',
+  '#7F7CAF',
+  '#9FB4C7',
+  '#28587B',
+  '#9FB798',
+  '#264653',
+  '#2A9D8F',
+  '#E9C46A',
+  '#F4A261',
+  '#E76F51',
+];
+
+function changeBackground() {
+  num = Math.floor(Math.random() * 10);
+  document.body.style.backgroundColor = colors[num];
+}
