@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(110, 178, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .time {
@@ -32,6 +32,7 @@ body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.363);
   background-color: white;
   color: rgb(53, 53, 53);
+  min-width: 130px;
 }
 
 #countdown {
@@ -50,4 +51,25 @@ body {
 }
 .btn-background:hover {
   transform: scale(1.1);
+}
+
+.btn-color {
+  background-color: rgb(255, 72, 72) !important;
+  border: solid 3px rgb(255, 72, 72) !important;
+}
+
+.hat {
+  max-width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .time {
+    min-width: 208px;
+  }
+}
+
+@media only screen and (max-width: 523px) {
+  .container {
+    padding-top: 400px !important;
+  }
 }
