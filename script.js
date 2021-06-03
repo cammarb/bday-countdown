@@ -45,6 +45,16 @@ const colors = [
 ];
 
 function changeBackground() {
-  num = Math.floor(Math.random() * 10);
+  num = Math.floor(Math.random() * colors.length);
   document.body.style.backgroundColor = colors[num];
+}
+
+function addColor() {
+  var colorInput = prompt('Please enter the HEX color code:', '#');
+
+  if (colorInput == null || colorInput == '#') {
+    alert('You did not choose a color. Try again.');
+  } else {
+    document.body.style.backgroundColor = String(colorInput);
+  }
 }
